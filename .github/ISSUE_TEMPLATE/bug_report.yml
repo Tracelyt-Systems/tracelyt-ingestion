@@ -1,0 +1,52 @@
+name: Bug Report
+description: Create a report to help us fix defects in Tracelyt Ingestion.
+title: "[Bug]: "
+labels: ["kind/bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue. Please verify that your submission does not contain sensitive tokens, production credentials, or confidential telemetry payloads.
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of the bug.
+      placeholder: Describe the observed defect...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can maintainers reproduce the issue?
+      placeholder: |
+        1. Run './mvnw ...'
+        2. Set environment variable '...'
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: Operating system, JDK version, Maven version, Docker version.
+      placeholder: |
+        - OS: [e.g. Ubuntu 22.04 / macOS Sonoma / Windows 11]
+        - Java Version: [e.g. Temurin 21.0.2]
+        - Docker Version: [e.g. 26.0]
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Log Output
+      description: Relevant logs or terminal output (ensure all secrets are redacted).
+      render: shell

@@ -1,0 +1,59 @@
+# Compiled build outputs
+target/
+*.class
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven Wrapper runtime downloads (keep the wrapper jar/script itself in .mvn/wrapper)
+!.mvn/wrapper/maven-wrapper.jar
+
+# JVM crash logs and heap dumps
+hs_err_pid*
+replay_pid*
+*.hprof
+
+# Environment variables, credentials, and certificates
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.crt
+*.cert
+
+# IDE & Editor configuration
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+bin/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# Logs and runtime outputs
+logs/
+*.log
+
+# Docker / Local persistent mounts
+.docker/
+docker-data/

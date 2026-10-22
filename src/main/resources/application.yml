@@ -1,0 +1,30 @@
+server:
+  port: ${PORT:8081}
+  shutdown: graceful
+
+spring:
+  application:
+    name: tracelyt-ingestion
+  lifecycle:
+    timeout-per-shutdown-phase: 20s
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: when_authorized
+      probes:
+        enabled: true
+    info:
+      enabled: true
+
+logging:
+  pattern:
+    level: "%5p [tracelyt-ingestion,%X{traceId:-},%X{spanId:-}]"
+  level:
+    root: INFO
+    io.tracelyt: INFO
