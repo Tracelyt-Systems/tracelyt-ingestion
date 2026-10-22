@@ -1,6 +1,6 @@
 # Global default code owners for Tracelyt Ingestion
-* @Tracelyt-Systems/maintainers
+* @Gyanendra7053 @priyanshuvishwakarma273403
 
 # CI workflows and security policies
-.github/workflows/ @Tracelyt-Systems/maintainers
-SECURITY.md @Tracelyt-Systems/maintainers
+.github/workflows/ @Gyanendra7053 @priyanshuvishwakarma273403
+SECURITY.md @Gyanendra7053 @priyanshuvishwakarma273403

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/tracelyt-logo.png" alt="Tracelyt Logo" width="160" />
+</p>
+
 # Tracelyt Ingestion
 
 High-throughput telemetry ingestion entry point for the Tracelyt open-source observability platform.
